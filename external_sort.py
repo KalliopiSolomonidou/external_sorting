@@ -31,7 +31,30 @@ def create_chunks():
             row_count += 1
             chunk.append(row)
             row_count += 1
-
+            chunk.append(row)
+            row_count += 1
+            chunk.append(row)
+            row_count += 1
+            chunk.append(row)
+            row_count += 1
+            chunk.append(row)
+            row_count += 1
+            chunk.append(row)
+            row_count += 1
+            chunk.append(row)
+            row_count += 1
+            chunk.append(row)
+            row_count += 1
+            chunk.append(row)
+            row_count += 1
+            chunk.append(row)
+            row_count += 1
+            chunk.append(row)
+            row_count += 1
+            chunk.append(row)
+            row_count += 1
+            chunk.append(row)
+            row_count += 1
             if row_count >= chunk_size:
                 save_chunk(chunk, chunk_id, headers)
                 chunk_id += 1
