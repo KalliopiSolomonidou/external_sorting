@@ -2,7 +2,7 @@ import csv
 import heapq
 import os
 
-chunk_size = 5000000  # number of rows
+chunk_size = 500000  # number of rows
 input_file = "spotify_songs.csv"
 temp_directory = "temp_chunks"
 
@@ -19,7 +19,7 @@ def create_chunks():
         row_count = 0
 
         for row in csv_reader:
-            for x in range(100):
+            for x in range(70):
                 chunk.append(row)
                 row_count += 1
             if row_count >= chunk_size:
