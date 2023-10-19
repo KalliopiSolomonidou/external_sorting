@@ -19,78 +19,9 @@ def create_chunks():
         row_count = 0
 
         for row in csv_reader:
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1            
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
-            chunk.append(row)
-            row_count += 1
+            for x in range(100):
+                chunk.append(row)
+                row_count += 1
             if row_count >= chunk_size:
                 save_chunk(chunk, chunk_id, headers)
                 chunk_id += 1
