@@ -2,7 +2,7 @@ import csv
 import heapq
 import os
 
-chunk_size = 5000  # number of rows
+chunk_size = 5000000  # number of rows
 input_file = "spotify_songs.csv"
 temp_directory = "temp_chunks"
 
